@@ -53,7 +53,7 @@ public class Owner extends Person {
 
     @Column(name = "age")
     @NotNull
-    private int age;
+    private Integer age;
 
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
@@ -83,8 +83,8 @@ public class Owner extends Person {
 		this.telephone = telephone;
 	}
 
-    public int getAge() {
-        return age;
+    public Integer getAge() {
+        return this.age;
     }
 
     public void setAge(int age) {
